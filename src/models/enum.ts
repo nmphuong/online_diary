@@ -1,0 +1,25 @@
+export const enum ErrorCode {
+    BAD_REQUEST = 'BAD_REQUEST',
+    INVALID_PARAMETER = 'INVALID_PARAMETER',
+    AUTHENTICATION_ERROR = 'AUTHENTICATION_ERROR',
+    FORBIDDEN = 'FORBIDDEN',
+    NOT_FOUND = 'NOT_FOUND',
+    DUPLICATE = 'DUPLICATE',
+    NOT_AVAILABLE = 'NOT_AVAILABLE',
+    INTERNAL_ERROR = 'INTERNAL_ERROR'
+}
+
+export enum GENDER {
+    MALE = "M",
+    FEMALE = "F"
+}
+
+export enum LANGUAGES {
+    VIE = 'vi',
+    ENG = 'en'
+}
+
+export enum ACCOUNT_TYPE {
+    USER = 'USER',
+    AGENT = 'AGENT'
+}
