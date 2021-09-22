@@ -29,10 +29,10 @@ class Config {
                 accessTokenExpiresIn: Number(process.env.USER_ACCESS_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_DAY * 7,
                 refreshTokenExpiresIn: Number(process.env.USER_REFRESH_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_DAY * 7
             },
-            agent: {
-                accessTokenExpiresIn: Number(process.env.ACCESS_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_30_DAYS,
-                refreshTokenExpiresIn: Number(process.env.USER_REFRESH_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_30_DAYS
-            }
+            // agent: {
+            //     accessTokenExpiresIn: Number(process.env.ACCESS_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_30_DAYS,
+            //     refreshTokenExpiresIn: Number(process.env.USER_REFRESH_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_30_DAYS
+            // }
         }
         this.defaultLanguage = LANGUAGES.VIE
     }
