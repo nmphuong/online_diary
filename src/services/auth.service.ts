@@ -1,4 +1,4 @@
-import { issueTokens } from '../modules/jwt'
+import { issueTokens, verify } from '../modules/jwt'
 import { FOError } from '../modules/error'
 import { ErrorCode } from '../models/enum'
 
@@ -30,12 +30,33 @@ namespace AuthService {
         if (!valid) {
             throw new FOError(401, ErrorCode.AUTHENTICATION_ERROR, 'authentication failed')
         }
-        delete params.password
+        params.password = undefined
         const tokens = await issueTokens(model as any, doc.id, { role, id: doc.id})
         return {
             [role]: doc,
             token: tokens.accessToken
         }
+    }
+
+    export const info = async (
+        model,
+        token,
+        parsedData
+    ) => {
+
+        console.log(token)
+        const access:any = await verify(token)
+
+        if (!access) {
+            throw new FOError(401, ErrorCode.AUTHENTICATION_ERROR, 'authentication failed')
+        }
+
+        const query = { _id: access?.id }
+        const doc = await model.findOne(query)
+
+        doc.password = undefined
+
+        return doc
     }
 }
 export = AuthService

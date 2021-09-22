@@ -3411,3 +3411,223 @@ info: Server worker with pid 41405 is now running on port 8081 in local
 info: open connection
 info: Server worker with pid 41425 is now running on port 8081 in local
 info: open connection
+info: Server worker with pid 69027 is now running on port 8081 in local
+info: open connection
+error: {"code":403,"errors":[{"code":"FORBIDDEN","message":"not authorized"}]}
+info: Server worker with pid 69065 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69083 is now running on port 8081 in local
+info: open connection
+error: {"code":403,"errors":[{"code":"FORBIDDEN","message":"not authorized"}]}
+info: Server worker with pid 69100 is now running on port 8081 in local
+error: {"code":403,"errors":[{"code":"FORBIDDEN","message":"not authorized"}]}
+info: open connection
+info: Server worker with pid 69119 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69157 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69196 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69220 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69250 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69283 is now running on port 8081 in local
+info: open connection
+error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/auth.service.ts[0m:[93m1[0m:[93m23[0m - [91merror[0m[90m TS2305: [0mModule '"../modules/jwt"' has no exported member 'issueAccessToken'.
+
+[7m1[0m import { issueTokens, issueAccessToken } from '../modules/jwt'
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/auth.service.ts[0m:[93m1[0m:[93m23[0m - [91merror[0m[90m TS2305: [0mModule '"../modules/jwt"' has no exported member 'issueAccessToken'.
+
+[7m1[0m import { issueTokens, issueAccessToken } from '../modules/jwt'
+[7m [0m [91m                      ~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:752:36)
+    at Object.compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30) {"error":{"diagnosticText":"\u001b[96msrc/services/auth.service.ts\u001b[0m:\u001b[93m1\u001b[0m:\u001b[93m23\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2305: \u001b[0mModule '\"../modules/jwt\"' has no exported member 'issueAccessToken'.\n\n\u001b[7m1\u001b[0m import { issueTokens, issueAccessToken } from '../modules/jwt'\n\u001b[7m \u001b[0m \u001b[91m                      ~~~~~~~~~~~~~~~~\u001b[0m\n","diagnosticCodes":[2305]},"stack":"TSError: ⨯ Unable to compile TypeScript:\n\u001b[96msrc/services/auth.service.ts\u001b[0m:\u001b[93m1\u001b[0m:\u001b[93m23\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2305: \u001b[0mModule '\"../modules/jwt\"' has no exported member 'issueAccessToken'.\n\n\u001b[7m1\u001b[0m import { issueTokens, issueAccessToken } from '../modules/jwt'\n\u001b[7m \u001b[0m \u001b[91m                      ~~~~~~~~~~~~~~~~\u001b[0m\n\n    at createTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:513:12)\n    at reportTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:517:19)\n    at getOutput (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:752:36)\n    at Object.compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:968:32)\n    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:42)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts:5:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:23)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts:3:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)","exception":true,"date":"Wed Sep 22 2021 12:35:11 GMT+0700 (Indochina Time)","process":{"pid":69309,"uid":502,"gid":20,"cwd":"/Users/Blockchain/Documents/code/online_diary/backend","execPath":"/usr/local/bin/node","version":"v14.17.0","argv":["/Users/Blockchain/Documents/code/online_diary/backend/node_modules/.bin/ts-node","/Users/Blockchain/Documents/code/online_diary/backend/src/server.ts"],"memoryUsage":{"rss":289574912,"heapTotal":212713472,"heapUsed":185207880,"external":38487648,"arrayBuffers":36403367}},"os":{"loadavg":[2.521484375,2.17431640625,2.052734375],"uptime":264008},"trace":[{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":513,"method":null,"native":false},{"column":19,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":517,"method":null,"native":false},{"column":36,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":752,"method":null,"native":false},{"column":32,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":968,"method":"compile","native":false},{"column":42,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1056,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1059,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":1,"file":"/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts","function":null,"line":5,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":23,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1056,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1059,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":1,"file":"/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false}]}
+info: Server worker with pid 69340 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69546 is now running on port 8081 in local
+error: {"code":500,"errors":[{"code":"INTERNAL_ERROR","message":"Cannot read property 'public' of undefined"}]}
+info: open connection
+error: {"code":500,"errors":[{"code":"INTERNAL_ERROR","message":"Cannot read property 'public' of undefined"}]}
+info: Server worker with pid 69571 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69610 is now running on port 8081 in local
+info: open connection
+error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/auth.service.ts[0m:[93m51[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'object'.
+
+[7m51[0m         const query = { id: access?.id }
+[7m  [0m [91m                                    ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/auth.service.ts[0m:[93m51[0m:[93m37[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'object'.
+
+[7m51[0m         const query = { id: access?.id }
+[7m  [0m [91m                                    ~~[0m
+
+    at createTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:752:36)
+    at Object.compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30) {"error":{"diagnosticText":"\u001b[96msrc/services/auth.service.ts\u001b[0m:\u001b[93m51\u001b[0m:\u001b[93m37\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2339: \u001b[0mProperty 'id' does not exist on type 'object'.\n\n\u001b[7m51\u001b[0m         const query = { id: access?.id }\n\u001b[7m  \u001b[0m \u001b[91m                                    ~~\u001b[0m\n","diagnosticCodes":[2339]},"stack":"TSError: ⨯ Unable to compile TypeScript:\n\u001b[96msrc/services/auth.service.ts\u001b[0m:\u001b[93m51\u001b[0m:\u001b[93m37\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2339: \u001b[0mProperty 'id' does not exist on type 'object'.\n\n\u001b[7m51\u001b[0m         const query = { id: access?.id }\n\u001b[7m  \u001b[0m \u001b[91m                                    ~~\u001b[0m\n\n    at createTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:513:12)\n    at reportTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:517:19)\n    at getOutput (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:752:36)\n    at Object.compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:968:32)\n    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:42)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts:5:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:23)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts:3:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)","exception":true,"date":"Wed Sep 22 2021 13:21:52 GMT+0700 (Indochina Time)","process":{"pid":69651,"uid":502,"gid":20,"cwd":"/Users/Blockchain/Documents/code/online_diary/backend","execPath":"/usr/local/bin/node","version":"v14.17.0","argv":["/Users/Blockchain/Documents/code/online_diary/backend/node_modules/.bin/ts-node","/Users/Blockchain/Documents/code/online_diary/backend/src/server.ts"],"memoryUsage":{"rss":294969344,"heapTotal":216645632,"heapUsed":193316352,"external":39079317,"arrayBuffers":36995036}},"os":{"loadavg":[1.52783203125,1.646484375,1.73779296875],"uptime":266809},"trace":[{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":513,"method":null,"native":false},{"column":19,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":517,"method":null,"native":false},{"column":36,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":752,"method":null,"native":false},{"column":32,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":968,"method":"compile","native":false},{"column":42,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1056,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1059,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":1,"file":"/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts","function":null,"line":5,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":23,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1056,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1059,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":1,"file":"/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false}]}
+info: Server worker with pid 69675 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69691 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69707 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69724 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69744 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69809 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69836 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69867 is now running on port 8081 in local
+info: open connection
+error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/auth.service.ts[0m:[93m51[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'object'.
+
+[7m51[0m         console.log(access.id)
+[7m  [0m [91m                           ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/auth.service.ts[0m:[93m51[0m:[93m28[0m - [91merror[0m[90m TS2339: [0mProperty 'id' does not exist on type 'object'.
+
+[7m51[0m         console.log(access.id)
+[7m  [0m [91m                           ~~[0m
+
+    at createTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:752:36)
+    at Object.compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30) {"error":{"diagnosticText":"\u001b[96msrc/services/auth.service.ts\u001b[0m:\u001b[93m51\u001b[0m:\u001b[93m28\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2339: \u001b[0mProperty 'id' does not exist on type 'object'.\n\n\u001b[7m51\u001b[0m         console.log(access.id)\n\u001b[7m  \u001b[0m \u001b[91m                           ~~\u001b[0m\n","diagnosticCodes":[2339]},"stack":"TSError: ⨯ Unable to compile TypeScript:\n\u001b[96msrc/services/auth.service.ts\u001b[0m:\u001b[93m51\u001b[0m:\u001b[93m28\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2339: \u001b[0mProperty 'id' does not exist on type 'object'.\n\n\u001b[7m51\u001b[0m         console.log(access.id)\n\u001b[7m  \u001b[0m \u001b[91m                           ~~\u001b[0m\n\n    at createTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:513:12)\n    at reportTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:517:19)\n    at getOutput (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:752:36)\n    at Object.compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:968:32)\n    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:42)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts:5:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:23)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts:3:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)","exception":true,"date":"Wed Sep 22 2021 13:40:01 GMT+0700 (Indochina Time)","process":{"pid":69883,"uid":502,"gid":20,"cwd":"/Users/Blockchain/Documents/code/online_diary/backend","execPath":"/usr/local/bin/node","version":"v14.17.0","argv":["/Users/Blockchain/Documents/code/online_diary/backend/node_modules/.bin/ts-node","/Users/Blockchain/Documents/code/online_diary/backend/src/server.ts"],"memoryUsage":{"rss":303538176,"heapTotal":222793728,"heapUsed":193331264,"external":38319085,"arrayBuffers":36234804}},"os":{"loadavg":[1.74462890625,1.689453125,1.669921875],"uptime":267898},"trace":[{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":513,"method":null,"native":false},{"column":19,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":517,"method":null,"native":false},{"column":36,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":752,"method":null,"native":false},{"column":32,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":968,"method":"compile","native":false},{"column":42,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1056,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1059,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":1,"file":"/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts","function":null,"line":5,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":23,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1056,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1059,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":1,"file":"/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false}]}
+info: Server worker with pid 69902 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69917 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69934 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69965 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69982 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 69996 is now running on port 8081 in local
+info: Server worker with pid 70021 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 70045 is now running on port 8081 in local
+info: open connection
+error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/auth.service.ts[0m:[93m55[0m:[93m9[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'doc' because it is a constant.
+
+[7m55[0m         doc = delete doc.password
+[7m  [0m [91m        ~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/auth.service.ts[0m:[93m55[0m:[93m9[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'doc' because it is a constant.
+
+[7m55[0m         doc = delete doc.password
+[7m  [0m [91m        ~~~[0m
+
+    at createTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:513:12)
+    at reportTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:517:19)
+    at getOutput (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:752:36)
+    at Object.compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:968:32)
+    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:42)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30)
+    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)
+    at Module.load (internal/modules/cjs/loader.js:933:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:774:14)
+    at Module.require (internal/modules/cjs/loader.js:957:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1068:30) {"error":{"diagnosticText":"\u001b[96msrc/services/auth.service.ts\u001b[0m:\u001b[93m55\u001b[0m:\u001b[93m9\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2588: \u001b[0mCannot assign to 'doc' because it is a constant.\n\n\u001b[7m55\u001b[0m         doc = delete doc.password\n\u001b[7m  \u001b[0m \u001b[91m        ~~~\u001b[0m\n","diagnosticCodes":[2588]},"stack":"TSError: ⨯ Unable to compile TypeScript:\n\u001b[96msrc/services/auth.service.ts\u001b[0m:\u001b[93m55\u001b[0m:\u001b[93m9\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2588: \u001b[0mCannot assign to 'doc' because it is a constant.\n\n\u001b[7m55\u001b[0m         doc = delete doc.password\n\u001b[7m  \u001b[0m \u001b[91m        ~~~\u001b[0m\n\n    at createTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:513:12)\n    at reportTSError (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:517:19)\n    at getOutput (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:752:36)\n    at Object.compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:968:32)\n    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:42)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts:5:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n    at Module.m._compile (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1056:23)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts:1059:12)\n    at Module.load (internal/modules/cjs/loader.js:933:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n    at Module.require (internal/modules/cjs/loader.js:957:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts:3:1)\n    at Module._compile (internal/modules/cjs/loader.js:1068:30)","exception":true,"date":"Wed Sep 22 2021 13:43:57 GMT+0700 (Indochina Time)","process":{"pid":70062,"uid":502,"gid":20,"cwd":"/Users/Blockchain/Documents/code/online_diary/backend","execPath":"/usr/local/bin/node","version":"v14.17.0","argv":["/Users/Blockchain/Documents/code/online_diary/backend/node_modules/.bin/ts-node","/Users/Blockchain/Documents/code/online_diary/backend/src/server.ts"],"memoryUsage":{"rss":313876480,"heapTotal":222531584,"heapUsed":191610440,"external":38310893,"arrayBuffers":36226612}},"os":{"loadavg":[1.7978515625,1.763671875,1.70361328125],"uptime":268134},"trace":[{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"createTSError","line":513,"method":null,"native":false},{"column":19,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"reportTSError","line":517,"method":null,"native":false},{"column":36,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"getOutput","line":752,"method":null,"native":false},{"column":32,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.compile","line":968,"method":"compile","native":false},{"column":42,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1056,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1059,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":1,"file":"/Users/Blockchain/Documents/code/online_diary/backend/src/controllers/user-auth.controller.ts","function":null,"line":5,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false},{"column":23,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Module.m._compile","line":1056,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1097,"method":".js","native":false},{"column":12,"file":"/Users/Blockchain/Documents/code/online_diary/backend/node_modules/ts-node/src/index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1059,"method":"ts]","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":933,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":774,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":957,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":1,"file":"/Users/Blockchain/Documents/code/online_diary/backend/src/routes/v1.ts","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1068,"method":"_compile","native":false}]}
+info: Server worker with pid 70073 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 70094 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 70110 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 70143 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 70160 is now running on port 8081 in local
+info: open connection
+info: Server worker with pid 70174 is now running on port 8081 in local
+info: open connection
+error: {"code":500,"errors":[{"code":"INTERNAL_ERROR","message":"invalid signature"}]}
+error: {"code":500,"errors":[{"code":"INTERNAL_ERROR","message":"invalid signature"}]}
+info: Server worker with pid 70197 is now running on port 8081 in local
+error: {"code":500,"errors":[{"code":"INTERNAL_ERROR","message":"invalid signature"}]}
+info: open connection
+error: {"code":500,"errors":[{"code":"INTERNAL_ERROR","message":"invalid algorithm"}]}
+info: Server worker with pid 88328 is now running on port 8081 in local
+info: open connection

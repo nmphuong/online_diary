@@ -22,7 +22,7 @@ namespace JWTLib {
     public: string,
     algorithm: jwt.Algorithm,
     user: IJWTTokenExpiresIns,
-    agent: IJWTTokenExpiresIns
+    // agent: IJWTTokenExpiresIns
   }
 
   export interface IJWTPayload {
@@ -46,7 +46,6 @@ namespace JWTLib {
     accountType: string,
     payload: IJWTPayload
   ): AccessToken => {
-    console.log()
     return jwt.sign(payload, conf.jwtConfig.secret, { algorithm: conf.jwtConfig.algorithm, expiresIn: conf.jwtConfig[accountType.toLowerCase()].accessTokenExpiresIn })
   } 
 
@@ -109,7 +108,7 @@ namespace JWTLib {
   export const verify = (
     accessToken: AccessToken
   ): object => {
-    const decoded = <any>jwt.verify(accessToken, config.public, { algorithms: [config.algorithm] })
+    const decoded = <any>jwt.verify(accessToken, conf.jwtConfig.public, { algorithms: [conf.jwtConfig.algorithm] })
     delete decoded.iat
     // delete decoded.exp
     return decoded

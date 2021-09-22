@@ -2,7 +2,8 @@ import * as mongoosePaginate from 'mongoose-paginate'
 import * as mongooseTimestamp from 'mongoose-timestamp'
 import * as mongooseBcrypt from 'mongoose-bcrypt'
 import * as mongooseDelete from 'mongoose-delete'
-import { Schema, model } from 'mongoose'
+import { Document, Schema, model, PaginateModel } from 'mongoose'
+import { IUserModel } from '../interface/user.interface'
 import { getEnumValues, getRegExRule, getError } from '../utils'
 import { GENDER } from "./enum";
 
@@ -72,6 +73,7 @@ userSchema.post('findOneAndUpdate', (err, doc, next) => {
     next(getError(err))
 })
 
+export interface UserModel<T extends Document> extends PaginateModel<T> { }
 /* tslint:disable */
-export const User = model('User', userSchema)
+export const User: UserModel<IUserModel> = model<IUserModel>('User', userSchema)
 /* tslint:enable */

@@ -21,5 +21,5 @@ export enum LANGUAGES {
 
 export enum ACCOUNT_TYPE {
     USER = 'USER',
-    AGENT = 'AGENT'
+    // AGENT = 'AGENT'
 }

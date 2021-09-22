@@ -3,4 +3,5 @@
 package-lock.json
 /build
 git-main.sh
+git-develop.sh
 git-users.sh
