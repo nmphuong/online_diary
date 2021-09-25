@@ -21,6 +21,14 @@ export default class StoryController {
             }]),
             this.create
         )
+
+        this.router.get('/my',
+            acl.allow('user', [{
+                role: 'user',
+                predicate: async req => isMyRequest(req)
+            }]),
+            this.getStory
+        )
     }
 
     public create = async (req: Request, res: Response, next: NextFunction) => {
@@ -29,6 +37,19 @@ export default class StoryController {
             const story = new Story(req.body)
             const userId = req?.user
             const result = await StoryService.create(Story, story, userId, req.parsedData)
+            res.json(result)
+        } catch (err) {
+            next(err)
+        }
+    }
+
+    public getStory = async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            validationResult(req).throw()
+            const userId = req?.user
+            const page = req.query.page ? Number(req.query.page) : 1
+            const limit = req.query.limit ? Number(req.query.limit) : 30
+            const result = await StoryService.getStory(Story, userId, page, limit, req.parsedData)
             res.json(result)
         } catch (err) {
             next(err)

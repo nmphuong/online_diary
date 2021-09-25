@@ -1,8 +1,5 @@
-import { verify } from '../modules/jwt'
 import { FOError } from '../modules/error'
 import { ErrorCode } from '../models/enum'
-import { Document } from 'mongoose'
-import { User } from 'models/user.model'
 
 namespace StoryService {
 
@@ -21,6 +18,24 @@ namespace StoryService {
         return {
             [role]: data
         }
+    }
+
+    export const getStory = async (
+        model,
+        reqUser,
+        page: number | undefined = 1,
+        limit: number | undefined = 30,
+        parsedData
+    ) => {
+        const query = { userId: reqUser.id }
+        const doc = await model.paginate(query, {
+            page,
+            limit
+        })
+        if (!doc) {
+            throw new FOError(404, ErrorCode.NOT_FOUND, 'No data')
+        }
+        return doc
     }
 }
 export = StoryService
