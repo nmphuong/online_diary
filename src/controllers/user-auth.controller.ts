@@ -4,7 +4,6 @@ import { Router, Request, Response, NextFunction } from 'express'
 import { User } from '../models/user.model'
 import * as AuthService from '../services/auth.service'
 import { validationResult } from 'express-validator'
-import { isMyRequest } from '../middlewares/auth-control'
 
 export default class UserAuthController {
     public router: Router

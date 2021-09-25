@@ -44,7 +44,6 @@ namespace AuthService {
         parsedData
     ) => {
 
-        console.log(token)
         const access:any = await verify(token)
 
         if (!access) {
