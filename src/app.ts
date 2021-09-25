@@ -2,9 +2,12 @@ import * as express from "express";
 import * as cors from 'cors';
 import * as helmet from 'helmet'
 import config from './config'
+import * as JWTLib from './modules/jwt'
 import * as DatabaseLib from './modules/db'
 import { handlingError } from './middlewares/handling-error'
 import v1 from './routes/v1';
+import { parseRequestMiddleware } from './middlewares/parse-request'
+import { loggerMiddleware } from './middlewares/logger'
 
 class App {
     app: express.Application;
@@ -20,6 +23,8 @@ class App {
         this.app.use(express.json({ limit: "10mb" }));
         this.app.use(express.urlencoded({ extended: false }));
         this.app.use(cors());
+        this.app.use(parseRequestMiddleware)
+        this.app.use(loggerMiddleware())
         this.app.get('/healthcheck', (req, res) => {
             res.sendStatus(200)
         })
@@ -56,6 +61,7 @@ class App {
     private moduleSetup() {
         DatabaseLib.configure(config.databaseConfig)
         DatabaseLib.initDb()
+        JWTLib.configure(config.jwtConfig)
     }
 }
 

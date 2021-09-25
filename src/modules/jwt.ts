@@ -5,10 +5,8 @@ import { Model } from 'mongoose'
 import { FOError } from '../modules/error'
 import { ErrorCode } from '../models/enum'
 import { RefreshToken } from '../models/refresh-token.model'
-import conf from '../config/index'
 
 namespace JWTLib {
-
   export type AccessToken = string
   export type RefreshToken = string
 
@@ -46,8 +44,8 @@ namespace JWTLib {
     accountType: string,
     payload: IJWTPayload
   ): AccessToken => {
-    return jwt.sign(payload, conf.jwtConfig.secret, { algorithm: conf.jwtConfig.algorithm, expiresIn: conf.jwtConfig[accountType.toLowerCase()].accessTokenExpiresIn })
-  } 
+    return jwt.sign(payload, config.secret, { algorithm: config.algorithm, expiresIn: config[accountType.toLowerCase()].accessTokenExpiresIn })
+  }
 
   const issueRefreshToken = async <T extends Model<any>>(
     model: T,
@@ -108,7 +106,7 @@ namespace JWTLib {
   export const verify = (
     accessToken: AccessToken
   ): object => {
-    const decoded = <any>jwt.verify(accessToken, conf.jwtConfig.public, { algorithms: [conf.jwtConfig.algorithm] })
+    const decoded = <any>jwt.verify(accessToken, config.public, { algorithms: [config.algorithm] })
     delete decoded.iat
     // delete decoded.exp
     return decoded

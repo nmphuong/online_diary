@@ -3,6 +3,7 @@ import { IJWTConfig } from '../modules/jwt'
 import { TIMESTAMP_CONSTANT } from '../models/constant'
 import { Algorithm } from 'jsonwebtoken'
 import { LANGUAGES } from '../models/enum'
+import { compact } from 'lodash'
 
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
@@ -14,6 +15,12 @@ class Config {
     databaseConfig: IDBConfig
     jwtConfig: IJWTConfig
     defaultLanguage: LANGUAGES
+    recoveryTokenExpiresIn: number
+    apiKey: {
+        keys: string[],
+        dedicatedSplit: string,
+        name: string
+    }
 
     constructor() {
         this.env = process.env.NODE_ENV || 'local'
@@ -28,11 +35,13 @@ class Config {
             user: {
                 accessTokenExpiresIn: Number(process.env.USER_ACCESS_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_DAY * 7,
                 refreshTokenExpiresIn: Number(process.env.USER_REFRESH_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_DAY * 7
-            },
-            // agent: {
-            //     accessTokenExpiresIn: Number(process.env.ACCESS_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_30_DAYS,
-            //     refreshTokenExpiresIn: Number(process.env.USER_REFRESH_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_30_DAYS
-            // }
+            }
+        }
+        this.recoveryTokenExpiresIn = Number(process.env.RECOVERY_TOKEN_EXPIRES_IN) || TIMESTAMP_CONSTANT.SECONDS_PER_HOUR * 48
+        this.apiKey = {
+            keys: compact([process.env.AUTH_API_KEY]) || [],
+            dedicatedSplit: process.env.DEDICATED_SPLIT_API_KEY || '+',
+            name: process.env.NAME_API_KEY || 'fo-api-key'
         }
         this.defaultLanguage = LANGUAGES.VIE
     }

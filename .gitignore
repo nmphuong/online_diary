@@ -6,3 +6,4 @@ package-lock.json
 git-main.sh
 git-develop.sh
 git-users.sh
+git-create-book.sh
